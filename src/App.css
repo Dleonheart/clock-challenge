@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.analog-clock {
+  width: 200px;
+  height: 200px;
+  background: white;
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: end;
+  background: linear-gradient(0deg, rgb(212, 212, 212) 35%, rgb(0, 0, 0) 35%);
+}
+
+.clock-bar {
+  grid-area: 1/1;
+  transform-origin: center calc(100% - 5px);
+  background-color: white; 
+}
+
+.hour-bar {
+  height: 40px;
+  width: 4px;
+}
+
+.minutes-bar {
+  height: 60px;
+  width: 3px;
+}
+
+.seconds-bar {
+  height: 90px;
+  width: 1px;
+}
+
+.digital-clock {
+  font-family: 'digital-clock-font';
+  font-size: 5rem;
+  line-height: 1em;
+  padding-inline: 20px;
+  padding-block: 10px;
+  background-color: black;
+}
+
+.time-cell {
+  min-width: 4.75rem;
+}
